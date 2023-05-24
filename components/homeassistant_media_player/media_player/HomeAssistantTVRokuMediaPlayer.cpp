@@ -27,9 +27,9 @@ std::string HomeAssistantTVRokuMediaPlayer::stringForRemoteCommand(
     case DOWN:
       return "DPAD_DOWN";
     case LEFT:
-      return "DPAD_LEFT";
+      return "VOLUME_DOWN";
     case RIGHT:
-      return "DPAD_RIGHT";
+      return "VOLUME_UP";
     case SELECT:
       return "DPAD_CENTER";
     case BACK:
@@ -39,9 +39,9 @@ std::string HomeAssistantTVRokuMediaPlayer::stringForRemoteCommand(
     case POWER:
       return "power";
     case VOLUME_UP:
-      return "VOLUME_UP";
+      return "DPAD_RIGHT";
     case VOLUME_DOWN:
-      return "VOLUME_DOWN";
+      return "DPAD_LEFT";
     case PAUSE_COMMAND:
       return "MEDIA_PLAY_PAUSE";
   }
