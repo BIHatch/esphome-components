@@ -39,7 +39,7 @@ std::string HomeAssistantTVRokuMediaPlayer::stringForRemoteCommand(
     case POWER:
       return "power";
     case VOLUME_UP:
-      return "VOLUME_DUP";
+      return "VOLUME_UP";
     case VOLUME_DOWN:
       return "VOLUME_DOWN";
     case PAUSE_COMMAND:
