@@ -50,7 +50,7 @@ std::string HomeAssistantTVRokuMediaPlayer::stringForRemoteCommand(
 
 void HomeAssistantTVRokuMediaPlayer::tvRemoteCommand(
     MediaPlayerTVRemoteCommand command) {
-  std::string remoteName = entity_id_.substr(12).insert(0, "remote");
+  std::string remoteName = entity_id_.c_str();
   auto commandString = stringForRemoteCommand(command);
   ESP_LOGI(TAG, "tvRemoteCommand: %s, %s", commandString.c_str(),
            remoteName.c_str());
