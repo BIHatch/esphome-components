@@ -23,27 +23,27 @@ std::string HomeAssistantTVRokuMediaPlayer::stringForRemoteCommand(
     MediaPlayerTVRemoteCommand command) {
   switch (command) {
     case UP:
-      return "up";
+      return "DPAD_UP";
     case DOWN:
-      return "down";
+      return "DPAD_DOWN";
     case LEFT:
-      return "left";
+      return "DPAD_LEFT";
     case RIGHT:
-      return "right";
+      return "DPAD_RIGHT";
     case SELECT:
-      return "select";
+      return "DPAD_CENTER";
     case BACK:
-      return "back";
+      return "BACK";
     case HOME:
-      return "home";
+      return "HOME";
     case POWER:
       return "power";
     case VOLUME_UP:
-      return "volume_up";
+      return "VOLUME_UP";
     case VOLUME_DOWN:
-      return "volume_down";
+      return "VOLUME_DOWN";
     case PAUSE_COMMAND:
-      return "pause";
+      return "MEDIA_PLAY_PAUSE";
   }
   return "";
 }
